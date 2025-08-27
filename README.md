@@ -1,7 +1,7 @@
 # 面向中文电子病历的代谢性疾病出院用药推荐任务
 
 <p align="center">
-        ⭐ <a href="https://tianchi.aliyun.com/competition/entrance/532411">天池评测网址</a>&nbsp&nbsp | &nbsp&nbsp📅 <a href="https://modelscope.cn/models/DUTIRbionlp/Taiyi2-chat">CHIP会议评测网址<a>&nbsp&nbsp | &nbsp&nbsp🗂️<a href="[./data_file/dataset_inf.md](https://tianchi.aliyun.com/competition/entrance/532411/information)">评测数据</a>
+        ⭐ <a href="https://tianchi.aliyun.com/competition/entrance/532411">天池评测网址</a>&nbsp&nbsp | &nbsp&nbsp📅 <a href="http://cips-chip.org.cn/2025/">CHIP会议评测网址<a>&nbsp&nbsp | &nbsp&nbsp🗂️<a href="[./data_file/dataset_inf.md](https://tianchi.aliyun.com/competition/entrance/532411/information)">评测数据</a>
 <br>
 <br>
 </p>
