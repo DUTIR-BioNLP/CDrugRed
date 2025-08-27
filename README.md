@@ -14,7 +14,6 @@
     - [1. 数据规模](#1-数据规模)
     - [2. 字段说明](#2-字段说明)
     - [3. 数据样例](#3-数据样例)
-  - [提交格式](#提交格式)
   - [评价指标](#评价指标)
   - [基线系统Baseline](#基线系统baseline)
   - [结果提交](#结果提交)
@@ -99,41 +98,8 @@
 ~~~
 
 
-## 提交格式
-A榜和B榜均要求提交对应测试集预测结果的Json文件，文件编码为UTF-8，具体格式如下：
-~~~
-[
-  {"ID": "1-1", "prediction": ["药物A", "药物B", ...]},
-  {"ID": "1-2", "prediction": ["药物C", "药物D", ...]},
-  ...
-]
-
-~~~
-
-字段说明：
-- ID：对应就诊标识
-- prediction：预测的药物名称列表（须与附件《候选药物列表》一致）
-
 ## 评价指标
-本评测任务使用以下评测指标，其中$y$为真实药物集合，$\hat{y}$为模型预测的药物集合，$\left|X\right|$表示集合$X$的元素个数：
-- Jaccard: 用于衡量两个集合的相似度，等于它们交集的大小除以它们并集的大小。
-$$ Jaccard=\frac{1}{N}\sum_{i=1}^{N}\frac{\left|y_i\cap\hat{y_i}\right|}{\left|y_i\cup\hat{y_i}\right|} $$
-- Precision（精确率）
-$$ Precision\left(y_i,\hat{y_i}\right)=\frac{\left|y_i\cap\hat{y_i}\right|}{\left|\hat{y_i}\right|} $$
-
-$$ AVG\_P=\frac{1}{N}\sum_{i=1}^{N}Precision\left(y_i,\hat{y_i}\right) $$
-- Recall（召回率）
-$$ Recall\left(y_i,\hat{y_i}\right)=\frac{\left|y_i\cap\hat{y_i}\right|}{\left|y_i\right|} $$
-
-$$ AVG\_R=\frac{1}{N}\sum_{i=1}^{N}Recall\left(y_i,\hat{y_i}\right) $$
-- F1分数
-$$ F_1\left(y_i,\hat{y_i}\right)=2\cdot\frac{Precision\left(y_i,\hat{y_i}\right)\cdot Recall\left(y_i,\hat{y_i}\right)}{Precision\left(y_i,\hat{y_i}\right)+Recall\left(y_i,\hat{y_i}\right)} $$
-
-$$ F1=\frac{1}{N}\sum_{i=1}^{N}F_1\left(y_i,\hat{y_i}\right) $$
-- 评价总指标
-$$ Score=\frac{1}{2}\cdot\left(Jaccard+F1\right) $$
-
-其中$y_i$是第$i$条数据的真实药物集合，${\hat{y}}_i$是模型预测的第$i$条数据的药物集合，$N$表示总数据量。**最终排名以评价总指标为准。**
+本评测任务使用Jaccard和F1评测指标，具体指标公式见评测网址。
 
 
 ## 基线系统Baseline
@@ -222,6 +188,7 @@ A榜和B榜均要求提交对应测试集预测结果的Json文件，文件编�
 ## 评测任务组织者
 - ### 组织单位
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**大连理工大学** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;罗凌、王健、孙媛媛、林鸿飞
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**大连医科大学附属第二医院** &nbsp;&nbsp;&nbsp;姜衍、王帆、张萍、吕慧怡
 - ### 联系人
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;李俊涛（juntaoli@mail.dlut.edu.cn）、袁浩斌（yhhhhb@mail.dlut.edu.cn）
