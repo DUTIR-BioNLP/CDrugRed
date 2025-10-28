@@ -1,7 +1,7 @@
 # 面向中文电子病历的代谢性疾病出院用药推荐任务
 
 <p align="center">
-        ⭐ <a href="https://tianchi.aliyun.com/competition/entrance/532411">天池评测网址</a>&nbsp&nbsp | &nbsp&nbsp📅 <a href="http://cips-chip.org.cn/2025/">CHIP会议评测网址<a>&nbsp&nbsp | &nbsp&nbsp🗂️<a href="[./data_file/dataset_inf.md](https://tianchi.aliyun.com/competition/entrance/532411/information)">评测数据</a>
+        ⭐ <a href="https://tianchi.aliyun.com/competition/entrance/532411">天池评测网址</a>&nbsp&nbsp | &nbsp&nbsp📅 <a href="http://cips-chip.org.cn/2025/">CHIP会议评测网址<a>&nbsp&nbsp | &nbsp&nbsp🗂️<a href="[./data_file/dataset_inf.md](https://tianchi.aliyun.com/competition/entrance/532411/information)">评测数据</a>&nbsp&nbsp | &nbsp&nbsp📃 <a href="https://arxiv.org/abs/2510.21084">数据集论文</a>
 <br>
 <br>
 </p>
@@ -206,6 +206,7 @@ A榜和B榜均要求提交对应测试集预测结果的Json文件，文件编�
 
 ## 数据集论文及引用
 数据集论文信息如下，如使用本数据集，请进行引用。
+```
 @articl{CDrugRed,
         title={CDrugRed: A Chinese Drug Recommendation Dataset for Discharge Medications in Metabolic Diseases},
         author={Juntao Li and Haobin Yuan and Ling Luo and Yan Jiang and Fan Wang and Ping Zhang and Huiyi Lv and Jian Wang and Yuanyuan Sun and Hongfei Lin},
@@ -213,5 +214,6 @@ A榜和B榜均要求提交对应测试集预测结果的Json文件，文件编�
         archivePrefix={arXiv},
         url={https://arxiv.org/abs/2510.21084},
 }
+```
 
 
