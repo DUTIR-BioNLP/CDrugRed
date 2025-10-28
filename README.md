@@ -1,4 +1,4 @@
-# 面向中文电子病历的代谢性疾病出院用药推荐任务
+<img width="649" height="322" alt="image" src="https://github.com/user-attachments/assets/a5017913-0ba7-466a-9615-970e561b960b" /># 面向中文电子病历的代谢性疾病出院用药推荐任务
 
 <p align="center">
         ⭐ <a href="https://tianchi.aliyun.com/competition/entrance/532411">天池评测网址</a>&nbsp&nbsp | &nbsp&nbsp📅 <a href="http://cips-chip.org.cn/2025/">CHIP会议评测网址<a>&nbsp&nbsp | &nbsp&nbsp🗂️<a href="[./data_file/dataset_inf.md](https://tianchi.aliyun.com/competition/entrance/532411/information)">评测数据</a>
@@ -24,6 +24,7 @@
   - [获奖队伍材料提交](#获奖队伍材料提交)
   - [日程安排](#日程安排)
   - [评测任务组织者](#评测任务组织者)
+  - [数据集论文及引用](#数据集论文及引用)
 
 
 ## 任务背景
@@ -89,7 +90,7 @@
 "就诊时间": "2015-03",
 "诊疗过程描述": "门诊查尿酮体：+，白细胞：250/ul、镜下：7-9/Hp。入院后查：尿常规:白细胞+++/ul、尿白细胞62.25/HP↑,口服补液后复查尿常规白细胞及酮体（-）。馒头餐试验结果回报：糖化血红蛋白...... ",
 "入院情况": "患者以\"烦渴、多饮、多尿5年，尿痛伴血糖控制不佳2个月。\"为主诉入院重要查体：T36.6℃，P76次/分，R22次/分，BP160/80mmHg......",
-"现病史": "患者5年前无明显诱因出现烦渴、多饮、多尿症状，遂于旅顺医院就诊，测空腹血糖16.7mmol/l,予患者二甲双胍、瑞格列奈、阿卡波糖片控制血糖...... ",
+"现病史": "患者5年前无明显诱因出现烦渴、多饮、多尿症状，遂于某医院就诊，测空腹血糖16.7mmol/l,予患者二甲双胍、瑞格列奈、阿卡波糖片控制血糖...... ",
 "既往史": "否认冠心病病史，否认有肝炎、结核、疟疾等传染病史，否认食物、药物过敏史，否认外伤、手术史，否认输血史，预防接种史不详。",
 "主诉": "烦渴、多饮、多尿5年，尿痛伴血糖控制不佳2个月。",
 "出院诊断": ["2型糖尿病", "糖尿病酮症", "泌尿系感染", "糖尿病大血管病变",...]
@@ -111,7 +112,7 @@ Baseline：直接使用训练数据集Lora微调GLM4-9B-Chat模型的预测结�
 ### 1. 提交方式
 比赛设立**A榜阶段**与**B榜阶段**两个赛段，具体安排如下：
 
-- A榜阶段（开发阶段）：参赛队伍在成功报名后，可通过天池平台下载训练数据和A榜测试数据集（开发集）文件，在本地进行模型调试与训练，并在线提交评测结果。A榜阶段成绩仅用于模型开发调优，不计入比赛最终成绩。且A榜测试集答案不公开，不用于B榜阶段模型训练。
+- A榜阶段（开发阶段）：参赛队伍在成功报名后，可通过天池平台下载训练数据和A榜测试数据集（开发集）文件，在本地进行模型调试与训练，并在线提交评测结果。A榜阶段成绩仅用于模型开发调优，不计入比赛最终成绩。
 
 - B榜阶段（最终评测）：B榜阶段将开放B榜测试数据集（测试集）供下载，参赛队伍需根据该数据集生成预测结果并提交至天池平台，**各队伍在B榜阶段的历史最优成绩作为最终排名与奖项评定的依据**。
 
@@ -202,5 +203,15 @@ A榜和B榜均要求提交对应测试集预测结果的Json文件，文件编�
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src=https://static.tianchi.aliyun.com/tianchi/race/images/prod/532411/1056869018586547/bpjvowyzm8ffwnw7.jpg >
+
+## 数据集论文及引用
+数据集论文信息如下，如使用本数据集，请进行引用。
+@articl{CDrugRed,
+        title={CDrugRed: A Chinese Drug Recommendation Dataset for Discharge Medications in Metabolic Diseases},
+        author={Juntao Li and Haobin Yuan and Ling Luo and Yan Jiang and Fan Wang and Ping Zhang and Huiyi Lv and Jian Wang and Yuanyuan Sun and Hongfei Lin},
+        year={2025},
+        archivePrefix={arXiv},
+        url={https://arxiv.org/abs/2510.21084},
+}
 
 
